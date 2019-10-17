@@ -1,0 +1,38 @@
+$button-width: 271px;
+
+#container {
+  display: block;
+  background-color: white;
+  padding: 0px;
+  margin: auto;
+  height: 100vh;
+
+  .background {
+    position: fixed;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .background__button {
+    width: $button-width;
+    height: 70px;
+    left: 50%;
+    margin-left: -$button-width / 2;
+    bottom: 10px;
+    position: absolute;
+    border: 1px solid rgb(227, 227, 227);
+    background-color: rgb(245, 245, 245);
+    border-radius: 45px;
+    font-size: 18px;
+    animation: easein 2s;
+  }
+  .background__button.load {
+    opacity: 1;
+  }
+};
+
+@keyframes easein {
+  from{ opacity: 0; }
+  to { opacity: 1; }
+}
+
