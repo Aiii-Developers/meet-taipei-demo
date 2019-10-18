@@ -8,12 +8,14 @@ import { QuestionComponent } from './shared/question/question.component';
 import { ScenarioComponent } from './shared/scenario/scenario.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
+import { TextQuestionComponent } from './shared/text-question/text-question.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuestionComponent,
     ScenarioComponent,
+    TextQuestionComponent,
   ],
   imports: [
     BrowserModule,
