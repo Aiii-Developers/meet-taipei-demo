@@ -11,10 +11,12 @@ export class TextQuestionComponent implements OnInit, OnDestroy {
   questionText: string;
   buttonsText: [string, string];
   imagePath: string;
+  isButtonVisible: boolean;
   private sub: any;
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.isButtonVisible = false;
     this.sub = this.route
       .data
       .subscribe(data => {
@@ -22,6 +24,10 @@ export class TextQuestionComponent implements OnInit, OnDestroy {
         this.buttonsText = data.buttonsText;
         this.imagePath = data.imagePath;
       });
+
+    setTimeout(() => {
+      this.isButtonVisible = true;
+    }, 3000);
   }
 
   ngOnDestroy() {

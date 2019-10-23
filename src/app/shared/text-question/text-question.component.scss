@@ -17,6 +17,7 @@ $button-height: 86px;
   .text-section {
     display: flex;
     justify-content: center;
+    animation-delay: 2s;
     animation: easein 2s;
   }
   
@@ -62,6 +63,7 @@ $button-height: 86px;
     background-color: red;
     width: $background-image-width;
     height: $background-image-width;
+    animation: easein .5s;
   }
 
   @media screen and (min-height: 400px) {

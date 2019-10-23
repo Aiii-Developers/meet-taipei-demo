@@ -1,3 +1,13 @@
-<div id="contaier">
-  <img [src]="">
+<div id="container">
+  <img class="background"
+      [src]="backgroundPath"
+  />
+  <div class="buttons" *ngIf="this.isButtonVisible">
+    <button mat-button
+            *ngFor="let text of buttonsText"
+            class="button"
+    >
+    {{ text }}
+    </button>
+  </div>
 </div>

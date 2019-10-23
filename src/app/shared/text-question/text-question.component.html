@@ -11,7 +11,7 @@
     </div>
   </div>
   <div class="backgroung-image"></div>
-  <div class="buttons">
+  <div class="buttons" *ngIf="this.isButtonVisible">
     <button mat-button
             *ngFor="let text of buttonsText"
             class="button"
