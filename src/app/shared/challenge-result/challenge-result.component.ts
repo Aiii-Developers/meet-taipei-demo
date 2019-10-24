@@ -6,7 +6,7 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './challenge-result.component.html',
   styleUrls: ['./challenge-result.component.scss']
 })
-export class ChallengeResultComponent implements OnInit {
+export class ChallengeResultComponent implements OnInit, OnDestroy {
   rawText: string;
   buttonText: string;
   imagePath: string;
@@ -30,7 +30,7 @@ export class ChallengeResultComponent implements OnInit {
     }, 5000);
   }
 
-  ngonDestroy() {
+  ngOnDestroy() {
     this.sub.unsubscribe();
   }
 

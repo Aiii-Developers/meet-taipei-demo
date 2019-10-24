@@ -6,7 +6,7 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './question.component.html',
   styleUrls: ['./question.component.scss']
 })
-export class QuestionComponent implements OnInit {
+export class QuestionComponent implements OnInit, OnDestroy {
   backgroundPath: string;
   buttonsText: [string, string];
   isButtonVisible: boolean;
@@ -27,7 +27,7 @@ export class QuestionComponent implements OnInit {
     }, 5000);
   }
 
-  ngonDestroy() {
+  ngOnDestroy() {
     this.sub.unsubscribe();
   }
 
