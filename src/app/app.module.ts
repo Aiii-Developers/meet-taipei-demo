@@ -9,6 +9,7 @@ import { ScenarioComponent } from './shared/scenario/scenario.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { TextQuestionComponent } from './shared/text-question/text-question.component';
+import { ChallengeResultComponent } from './shared/challenge-result/challenge-result.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { TextQuestionComponent } from './shared/text-question/text-question.comp
     QuestionComponent,
     ScenarioComponent,
     TextQuestionComponent,
+    ChallengeResultComponent,
   ],
   imports: [
     BrowserModule,

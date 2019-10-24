@@ -3,12 +3,14 @@ import { Routes, RouterModule } from '@angular/router';
 import { ScenarioComponent } from './shared/scenario/scenario.component';
 import { TextQuestionComponent } from './shared/text-question/text-question.component';
 import { QuestionComponent } from './shared/question/question.component';
+import { ChallengeResultComponent } from './shared/challenge-result/challenge-result.component';
 
 const routes: Routes = [
   { path: 'two', component: ScenarioComponent, data: { path: '../assets/gif/2句.gif' } },
   { path: 'three', component: ScenarioComponent, data: { path: '../assets/gif/3句.gif' } },
   { path: 'four', component: ScenarioComponent, data: { path: '../assets/gif/4句.gif' } },
-  { path: '',
+  {
+    path: '',
     component: TextQuestionComponent,
     data:
     {
@@ -17,11 +19,23 @@ const routes: Routes = [
       imagePath: ''
     }
   },
-  { path: 'question', component: QuestionComponent,
+  {
+    path: 'question',
+    component: QuestionComponent,
     data:
     {
       buttonsText: ['報告老闆，LINE後台不支援此分析', '沒問題！(還好合作廠商有支援)'],
       imagePath: '../assets/gif/2句.gif'
+    }
+  },
+  {
+    path: 'challenge-result',
+    component: ChallengeResultComponent,
+    data:
+    {
+      rawText: '這個廣告抓得住我！和我近期的喜好相符～',
+      buttonText: '話不多說立馬\n查看挑戰結果',
+      imagePath: ''
     }
   }
 ];

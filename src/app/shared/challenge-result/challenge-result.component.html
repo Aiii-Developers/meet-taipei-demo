@@ -1,0 +1,15 @@
+<div id="container">
+  <div class="text-section">
+    <div class="arrow__section">
+      <img src='../../../assets/icon/arrow.png' class='arrow'>  
+    </div>
+    <div class="text-section__box">
+        <p>{{ rawText }}</p>
+    </div>
+  </div>
+  <div class="backgroung-image"></div>
+  <div class="button-section" *ngIf="isButtonVisible">
+    <button mat-button 
+      class="__button"> {{ buttonText }} </button>
+  </div>
+</div>
