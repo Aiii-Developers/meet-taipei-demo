@@ -7,20 +7,25 @@ import { O2OModule } from './o2o/o2o.module';
 import { QuestionComponent } from './shared/question/question.component';
 import { ScenarioComponent } from './shared/scenario/scenario.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSliderModule } from '@angular/material/slider';
+import { MatButtonModule } from '@angular/material/button';
+import { TextQuestionComponent } from './shared/text-question/text-question.component';
+import { ChallengeResultComponent } from './shared/challenge-result/challenge-result.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     QuestionComponent,
     ScenarioComponent,
+    TextQuestionComponent,
+    ChallengeResultComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     O2OModule,
     BrowserAnimationsModule,
-    MatSliderModule
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

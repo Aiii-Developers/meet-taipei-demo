@@ -2,15 +2,17 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-question',
-  templateUrl: './question.component.html',
-  styleUrls: ['./question.component.scss']
+  selector: 'app-challenge-result',
+  templateUrl: './challenge-result.component.html',
+  styleUrls: ['./challenge-result.component.scss']
 })
-export class QuestionComponent implements OnInit {
-  backgroundPath: string;
-  buttonsText: [string, string];
+export class ChallengeResultComponent implements OnInit {
+  rawText: string;
+  buttonText: string;
+  imagePath: string;
   isButtonVisible: boolean;
   private sub: any;
+
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
@@ -18,8 +20,9 @@ export class QuestionComponent implements OnInit {
     this.sub = this.route
       .data
       .subscribe(data => {
-        this.backgroundPath = data.imagePath;
-        this.buttonsText = data.buttonsText;
+        this.rawText = data.rawText;
+        this.buttonText = data.buttonText;
+        this.imagePath = data.imagePath;
       });
 
     setTimeout(() => {

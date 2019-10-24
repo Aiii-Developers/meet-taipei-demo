@@ -1,0 +1,104 @@
+$background-color: rgb(0, 149, 186);
+$yellow: rgb(236, 255, 0);
+$gray: rgb(243, 243, 243);
+$circle-diameter: 5px;
+$background-image-width: 335px;
+$button-width: 295px;
+$button-height: 86px;
+
+#container {
+  display: inline-block;
+  background-color: $background-color;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+
+  .text-section {
+    display: flex;
+    justify-content: center;
+    animation-delay: 2s;
+    animation: easein 2s;
+  }
+  
+  #circle {
+    background: $yellow;
+    width: $circle-diameter;
+    height: $circle-diameter;
+    border-radius: 50%;
+    margin: 5px 0 5px 0;
+  }
+
+  .text-section__circles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 10px;
+    height: 48px;
+    margin: 74px 10px 0 -15px;
+  }
+
+  .text-section__box {
+    width: 257px;
+    height: 118px;
+    background-color: $gray;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 40px;
+    border-radius: 4px;
+    padding: 0 19px;
+    p {
+      margin: 0;
+      color: $background-color;
+    }
+  }
+
+  .backgroung-image {
+    display: flex;
+    justify-content: center;
+    margin: -32px auto 0 auto;
+    border: 1px solid black;
+    background-color: red;
+    width: $background-image-width;
+    height: $background-image-width;
+    animation: easein .5s;
+  }
+
+  @media screen and (min-height: 400px) {
+    .buttons {
+      height: 192px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: -60px;
+    }
+  }
+
+  @media screen and (min-height: 800px) {
+    .buttons {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: auto;
+    }
+  }
+
+  .button {
+    width: $button-width;
+    height: $button-height;
+    background-color: $yellow;
+    border-radius: 45px;
+    color: $background-color;
+    margin: 10px auto;
+    font-size: 16px;
+    animation: easein 2s;
+  }
+
+}
+
+@keyframes easein {
+  from{ opacity: 0; }
+  to { opacity: 1; }
+}

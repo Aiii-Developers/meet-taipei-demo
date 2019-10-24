@@ -1,0 +1,22 @@
+<div id="container">
+  <div class="text-section">
+    <div class="text-section__circles">
+        <div *ngFor="let number of [0, 1]"
+            id="circle"
+        >
+        </div>
+      </div>
+    <div class="text-section__box">
+        <p>{{ questionText }}</p>
+    </div>
+  </div>
+  <div class="backgroung-image"></div>
+  <div class="buttons" *ngIf="this.isButtonVisible">
+    <button mat-button
+            *ngFor="let text of buttonsText"
+            class="button"
+    >
+    {{ text }}
+    </button>
+  </div>
+</div>

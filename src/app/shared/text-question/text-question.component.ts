@@ -2,13 +2,15 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-question',
-  templateUrl: './question.component.html',
-  styleUrls: ['./question.component.scss']
+  selector: 'app-text-question',
+  templateUrl: './text-question.component.html',
+  styleUrls: ['./text-question.component.scss']
 })
-export class QuestionComponent implements OnInit {
-  backgroundPath: string;
+export class TextQuestionComponent implements OnInit, OnDestroy {
+
+  questionText: string;
   buttonsText: [string, string];
+  imagePath: string;
   isButtonVisible: boolean;
   private sub: any;
   constructor(private route: ActivatedRoute) { }
@@ -18,16 +20,17 @@ export class QuestionComponent implements OnInit {
     this.sub = this.route
       .data
       .subscribe(data => {
-        this.backgroundPath = data.imagePath;
+        this.questionText = data.questionText;
         this.buttonsText = data.buttonsText;
+        this.imagePath = data.imagePath;
       });
 
     setTimeout(() => {
       this.isButtonVisible = true;
-    }, 5000);
+    }, 3000);
   }
 
-  ngonDestroy() {
+  ngOnDestroy() {
     this.sub.unsubscribe();
   }
 
