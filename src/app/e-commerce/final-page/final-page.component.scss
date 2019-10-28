@@ -43,11 +43,10 @@ $carousel-width: 355px;
     padding: 0;
     height: $carousel-height;
     width: $carousel-width;
-    border: solid 1px black;
     .__image {
-      width: 315px;
+      width: 80%;
       height: 100%;
-      padding: 0 20px;
+      margin-left: 33.5px;
     }
 
   }
@@ -69,7 +68,6 @@ $carousel-width: 355px;
     padding: 0;
     width: $image-width;
     height: $image-height;
-    border: solid 1px black;
     .__image {
       width: 100%;
       height: 100%;
