@@ -4,7 +4,8 @@ import { ScenarioComponent } from './shared/scenario/scenario.component';
 import { TextQuestionComponent } from './shared/text-question/text-question.component';
 import { QuestionComponent } from './shared/question/question.component';
 import { ChallengeResultComponent } from './shared/challenge-result/challenge-result.component';
-import { FinalPageComponent } from './shared/final-page/final-page.component';
+import { FinalPageComponent } from './e-commerce/final-page/final-page.component';
+import { UserNameComponent } from './e-commerce/user-name/user-name.component';
 
 const routes: Routes = [
   { path: 'two', component: ScenarioComponent, data: { path: '../assets/gif/2句.gif' } },
@@ -44,9 +45,10 @@ const routes: Routes = [
     component: FinalPageComponent,
     data:
     {
-      slickImagePath: [],
+      slickImagePaths: [],
       buttonText: '取得消費著輪廓',
-      imagePath: ''
+      imagePath: '',
+      starNumber: 3
     }
   }
 ];
