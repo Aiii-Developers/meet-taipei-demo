@@ -12,6 +12,7 @@ export class TextQuestionComponent implements OnInit, OnDestroy {
   buttonsText: [string, string];
   imagePath: string;
   isButtonVisible: boolean;
+  nextPage: [string, string];
   private sub: any;
   constructor(private route: ActivatedRoute) { }
 
@@ -23,6 +24,7 @@ export class TextQuestionComponent implements OnInit, OnDestroy {
         this.questionText = data.questionText;
         this.buttonsText = data.buttonsText;
         this.imagePath = data.imagePath;
+        this.nextPage = data.nextPage;
       });
 
     setTimeout(() => {

@@ -17,9 +17,9 @@
         </span>
       </div>
   </div>
-  <swiper class="carousel-section">
-    <div *ngFor="let slide of [1, 2, 3]" class="swiper-slide">
-      <img src="../../../assets/image/3-star/CMR整合.png" class="__image">
+  <swiper class="carousel-section" [disabled]="disabled" [swiper]="config">
+    <div *ngFor="let imagePath of slickImagePaths" class="swiper-slide">
+      <img [src]="imagePath" class="__image">
     </div>
   </swiper>
   <div class="button-section">

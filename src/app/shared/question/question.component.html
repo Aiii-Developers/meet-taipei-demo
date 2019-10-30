@@ -4,7 +4,8 @@
   />
   <div class="buttons" *ngIf="this.isButtonVisible">
     <button mat-button
-            *ngFor="let text of buttonsText"
+            *ngFor="let text of buttonsText; let i = index;"
+            [routerLink]="nextPage[i]"
             class="button"
     >
     {{ text }}
