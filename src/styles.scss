@@ -10,3 +10,33 @@ body {
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+$swiper-button-width: 10px;
+$swiper-button-height: 24px;
+
+@mixin swiper-button {
+  width: $swiper-button-width !important;
+  height: $swiper-button-height !important;
+  background-size: cover !important;
+  background-size: fit !important;
+  outline: none !important;
+}
+
+.swiper-button-next {
+  @include swiper-button;
+  background-image: url('./assets/icon/arrow-right.png') !important;
+}
+
+.swiper-button-prev {
+  @include swiper-button;
+  background-image: url('./assets/icon/arrow-left.png') !important;
+}
+
+
+.swiper.s-wrapper {
+  .swiper-wrapper {
+    .swiper-slide {
+      overflow-y: hidden !important;
+    }
+  }
+}

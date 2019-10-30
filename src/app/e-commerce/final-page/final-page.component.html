@@ -1,0 +1,35 @@
+<div id="container">
+  <app-user-name 
+    class="user-name-section"
+    [userName]="userName">
+  </app-user-name>
+  <div class="text-section">
+      <p>恭喜完成挑戰</p>
+      <div class="__stars">
+        <span>營銷整合力 </span>
+        <span *ngFor="let num of [].constructor(starNumber)"
+              class="-star">
+              ★
+        </span>
+        <span *ngFor="let num of [].constructor(5 - starNumber)"
+              class="-star">
+              ☆
+        </span>
+      </div>
+  </div>
+  <swiper class="carousel-section" [disabled]="disabled" [swiper]="config" (indexChange)="onIndexChange($event)" (swiperTransitionStart)="onSwiperEvent('transitionStart')" (swiperTransitionEnd)="onSwiperEvent('transitionEnd')">
+    <div *ngFor="let slide of [1, 2, 3]" class="swiper-slide">
+      <img src="../../../assets/image/3-star/CMR整合.png" class="__image">
+    </div>
+  </swiper>
+  <div class="button-section">
+    <button mat-button
+    class="__button"
+    >
+    {{ buttonText }}
+    </button>
+  </div>
+  <div class="image-section">
+    <img src="../../assets/image/final-page-people.png" class="__image">
+  </div>
+</div>
