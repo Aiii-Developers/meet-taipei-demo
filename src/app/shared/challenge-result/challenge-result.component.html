@@ -13,6 +13,9 @@
   <div class="divider"></div>
   <div class="button-section" *ngIf="isButtonVisible">
     <button mat-button 
-      class="__button"> {{ buttonText }} </button>
+      class="__button"
+      [routerLink]="getFinalPagePath()"> 
+      {{ buttonText }}
+    </button>
   </div>
 </div>

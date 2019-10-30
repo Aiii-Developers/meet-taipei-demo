@@ -304,6 +304,38 @@ const ecommerceRoute = [
       buttonText: '話不多說\n立馬查看挑戰結果',
       imagePath: '../assets/image/chat bot/meet taipei chatbot_2-4-2.png',
     }
+  },
+  {
+    path: 'e-commerce/final/three',
+    component: FinalPageComponent,
+    data:
+    {
+      slickImagePaths: [
+        '../assets/image/3-star/CMR整合.png',
+        '../assets/image/3-star/渠道分析.png',
+        '../assets/image/3-star/抽獎管理.png',
+        '../assets/image/3-star/活動管理.png',
+      ],
+      buttonText: '取得消費著輪廓',
+      imagePath: '../assets/image/chat bot/final-page-people.png',
+      starNumber: 3
+    }
+  },
+  {
+    path: 'e-commerce/final/five',
+    component: FinalPageComponent,
+    data:
+    {
+      slickImagePaths: [
+        '../assets/image/5-star/CMR整合.png',
+        '../assets/image/5-star/動態標籤.png',
+        '../assets/image/5-star/客戶分級.png',
+        '../assets/image/5-star/渠道分析.png',
+      ],
+      buttonText: '取得消費著輪廓',
+      imagePath: '../assets/image/chat bot/final-page-people.png',
+      starNumber: 5
+    }
   }
 ];
 

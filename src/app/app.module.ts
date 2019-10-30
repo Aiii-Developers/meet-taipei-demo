@@ -15,6 +15,7 @@ import { UserNameComponent } from './shared/user-name/user-name.component';
 import { SwiperModule } from 'ngx-swiper-wrapper';
 import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
+import { AnswerService } from './shared/answer.service';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   a11y: true,
@@ -47,7 +48,8 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     {
       provide: SWIPER_CONFIG,
       useValue: DEFAULT_SWIPER_CONFIG
-    }
+    },
+    AnswerService
   ],
   bootstrap: [AppComponent]
 })
