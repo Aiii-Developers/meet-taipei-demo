@@ -4,11 +4,10 @@ import { ScenarioComponent } from './shared/scenario/scenario.component';
 import { TextQuestionComponent } from './shared/text-question/text-question.component';
 import { QuestionComponent } from './shared/question/question.component';
 import { ChallengeResultComponent } from './shared/challenge-result/challenge-result.component';
-import { FinalPageComponent } from './e-commerce/final-page/final-page.component';
-import { UserNameComponent } from './e-commerce/user-name/user-name.component';
+import { FinalPageComponent } from './shared/final-page/final-page.component';
 
 const routes: Routes = [
-  { path: 'two', component: ScenarioComponent, data: { path: '../assets/gif/2句.gif' } },
+  { path: 'two', component: ScenarioComponent, data: { path: '../assets/gif/2句.gif', liffId: '1570437614-DJVLOrqd' } },
   { path: 'three', component: ScenarioComponent, data: { path: '../assets/gif/3句.gif' } },
   { path: 'four', component: ScenarioComponent, data: { path: '../assets/gif/4句.gif' } },
   {
