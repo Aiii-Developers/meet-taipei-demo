@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { LiffService } from '../../liff/liff.service';
 
 @Component({
   selector: 'app-final-page',
@@ -13,11 +14,11 @@ export class FinalPageComponent implements OnInit, OnDestroy {
   userName: string;
   starNumber: number;
   private sub: any;
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private liffService: LiffService) { }
 
-  ngOnInit() {
-    // TODO(jamfly): need to be dynamic
-    this.userName = 'jamfly';
+  async ngOnInit() {
+    const profile = await this.liffService.getProfile();
+    this.userName = profile.displayName;
     this.sub = this.route
       .data
       .subscribe(data => {
