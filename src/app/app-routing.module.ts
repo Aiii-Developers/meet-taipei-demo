@@ -12,6 +12,7 @@ const o2oRoute = [
     component: ScenarioComponent,
     data:
     {
+      liffId: '1570437614-EX2Yn1x3',
       path: '../assets/gif/對話_O2O-開頭.gif',
       nextPage: 'question/1',
       buttonText: '已了解情境背景，立即挑戰實作!'
@@ -165,6 +166,7 @@ const ecommerceRoute = [
     component: ScenarioComponent,
     data:
     {
+      liffId: '1570437614-91MRpJkK',
       path: '../assets/gif/對話_電商-開頭.gif',
       nextPage: 'question/1',
       buttonText: '已了解情境背景，立即挑戰實作!'
