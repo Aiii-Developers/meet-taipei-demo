@@ -32,4 +32,8 @@ export class FinalPageComponent implements OnInit, OnDestroy {
     this.sub.unsubscribe();
   }
 
+  closeLiffWindow() {
+    this.liffService.closeWindow();
+  }
+
 }

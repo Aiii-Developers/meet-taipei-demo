@@ -13,7 +13,6 @@ export class LiffService {
   }
 
   async initLiff(liffId: string) {
-    console.log('init liff');
     try {
       if (!this.isInit) {
         await this.liff.init({ liffId });
@@ -25,8 +24,6 @@ export class LiffService {
   }
 
   async login() {
-    console.log('log in');
-
     try {
       if (!this.liff.isLoggedIn()) {
         this.liff.login();
@@ -37,13 +34,16 @@ export class LiffService {
   }
 
   async getProfile(): Promise<LIFFUserProfile | null> {
-    console.log('get liff profile');
     try {
       return await this.liff.getProfile();
     } catch (error) {
       console.log(error);
       return null;
     }
+  }
+
+  closeWindow() {
+    this.liff.closeWindow();
   }
 
 }
