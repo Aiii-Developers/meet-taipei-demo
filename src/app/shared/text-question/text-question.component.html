@@ -10,11 +10,15 @@
         <p>{{ questionText }}</p>
     </div>
   </div>
-  <div class="backgroung-image"></div>
+  <div class="backgroung-image">
+    <img [src]="imagePath" class="__image" />
+  </div>
   <div class="buttons" *ngIf="this.isButtonVisible">
     <button mat-button
-            *ngFor="let text of buttonsText"
+            *ngFor="let text of buttonsText; let i = index"
+            [routerLink]="nextPage[i]"
             class="button"
+            (click)="select(i == 0 ? 'a' : 'b')"
     >
     {{ text }}
     </button>

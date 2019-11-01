@@ -7,9 +7,15 @@
         <p>{{ rawText }}</p>
     </div>
   </div>
-  <div class="backgroung-image"></div>
+  <div class="backgroung-image">
+    <img [src]="imagePath" class="__image">
+  </div>
+  <div class="divider"></div>
   <div class="button-section" *ngIf="isButtonVisible">
     <button mat-button 
-      class="__button"> {{ buttonText }} </button>
+      class="__button"
+      [routerLink]="getFinalPagePath()"> 
+      {{ buttonText }}
+    </button>
   </div>
 </div>

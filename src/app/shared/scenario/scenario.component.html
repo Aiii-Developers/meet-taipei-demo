@@ -1,13 +1,13 @@
 <div id="container">
-  <img class="background"
-      [src]="backgroundPath"
-  />
-  <button mat-button
-          class="background__button"
-          color="primary"
-          *ngIf="this.isButtonVisible"
-  >
-          已了解情境背景<br>
-          立即挑戰實作!
-  </button>
+        <img class="background"
+        [src]="backgroundPath"
+        />
+        <button mat-button
+                class="background__button"
+                color="primary"
+                *ngIf="this.isButtonVisible"
+                [routerLink]="nextPagePath"
+        >
+        {{ buttonText }}
+        </button>
 </div>

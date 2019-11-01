@@ -18,18 +18,19 @@
       </div>
   </div>
   <swiper class="carousel-section">
-    <div *ngFor="let slide of [1, 2, 3]" class="swiper-slide">
-      <img src="../../../assets/image/3-star/CMR整合.png" class="__image">
+    <div *ngFor="let imagePath of slickImagePaths" class="swiper-slide">
+      <img [src]="imagePath" class="__image">
     </div>
   </swiper>
   <div class="button-section">
     <button mat-button
     class="__button"
+    (click)="closeLiffWindow()"
     >
     {{ buttonText }}
     </button>
   </div>
   <div class="image-section">
-    <img src="../../assets/image/final-page-people.png" class="__image">
+    <img src="../../assets/image/chat bot/final-page-people.png" class="__image">
   </div>
 </div>

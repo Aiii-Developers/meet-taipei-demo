@@ -59,11 +59,13 @@ $button-height: 86px;
     display: flex;
     justify-content: center;
     margin: -32px auto 0 auto;
-    border: 1px solid black;
-    background-color: red;
     width: $background-image-width;
     height: $background-image-width;
     animation: easein .5s;
+    .__image {
+      height: 100%;
+      width: 100%;
+    }
   }
 
   @media screen and (min-height: 400px) {

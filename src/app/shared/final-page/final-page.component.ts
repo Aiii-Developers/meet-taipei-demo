@@ -1,7 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { LiffService } from '../../liff/liff.service';
-
 @Component({
   selector: 'app-final-page',
   templateUrl: './final-page.component.html',
@@ -27,11 +26,14 @@ export class FinalPageComponent implements OnInit, OnDestroy {
         this.imagePath = data.imagePath;
         this.starNumber = data.starNumber;
       });
-
   }
 
   ngOnDestroy() {
     this.sub.unsubscribe();
+  }
+
+  closeLiffWindow() {
+    this.liffService.closeWindow();
   }
 
 }

@@ -40,3 +40,9 @@ $swiper-button-height: 24px;
     }
   }
 }
+
+.swiper.s-wrapper.swiper-container-horizontal {
+  .swiper-scrollbar {
+    height: 0 !important;
+  }
+}

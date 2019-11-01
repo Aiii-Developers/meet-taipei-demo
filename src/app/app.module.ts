@@ -12,20 +12,42 @@ import { ChallengeResultComponent } from './shared/challenge-result/challenge-re
 import { FinalPageComponent } from './shared/final-page/final-page.component';
 import { UserNameComponent } from './shared/user-name/user-name.component';
 
-import { SwiperModule } from 'ngx-swiper-wrapper';
-import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
-import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
+import { 
+  SWIPER_CONFIG,
+  SwiperModule,
+  SwiperConfigInterface,
+  SwiperScrollbarInterface,
+  SwiperPaginationInterface
+} from 'ngx-swiper-wrapper';
+
+import { AnswerService } from './shared/answer.service';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   a11y: true,
   direction: 'horizontal',
   keyboard: true,
   mousewheel: true,
-  scrollbar: false,
-  navigation: true,
+  scrollbar: true,
+  navigation: false,
   pagination: false,
-  loop: true
+  loop: true,
 };
+
+const scrollbar: SwiperScrollbarInterface = {
+  el: '.swiper-scrollbar',
+  hide: false,
+  draggable: true
+};
+
+const pagination: SwiperPaginationInterface = {
+  el: '.swiper-pagination',
+  clickable: true,
+  hideOnClick: false
+};
+
+
+DEFAULT_SWIPER_CONFIG.scrollbar = scrollbar;
+DEFAULT_SWIPER_CONFIG.pagination = pagination;
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +69,8 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     {
       provide: SWIPER_CONFIG,
       useValue: DEFAULT_SWIPER_CONFIG
-    }
+    },
+    AnswerService
   ],
   bootstrap: [AppComponent]
 })

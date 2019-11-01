@@ -10,8 +10,10 @@ import { LiffService } from '../../liff/liff.service';
 export class ScenarioComponent implements OnInit, OnDestroy {
 
   backgroundPath: string;
+  nextPagePath: string;
   isButtonVisible: boolean;
   liffId: string;
+  buttonText: string;
   private sub: any;
   constructor(private route: ActivatedRoute, private liffService: LiffService) {}
 
@@ -22,7 +24,8 @@ export class ScenarioComponent implements OnInit, OnDestroy {
       .subscribe(data => {
         this.backgroundPath = data.path;
         this.liffId = data.liffId;
-        console.log(JSON.stringify(data));
+        this.nextPagePath = data.nextPage;
+        this.buttonText = data.buttonText;
       });
 
     setTimeout(() => {
