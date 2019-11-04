@@ -78,12 +78,23 @@ $button-height: 86px;
     }
   }
 
-  @media screen and (min-height: 800px) {
+  @media screen and (min-height: 812px) {
     .buttons {
       display: flex;
       justify-content: center;
       flex-direction: column;
-      margin: auto;
+      margin: 30px auto 0;
+    }
+  }
+
+  @media screen
+    and (max-height: 896px)
+    and (min-width : 414px)  {
+    .buttons {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: 90px auto 0;
     }
   }
 
