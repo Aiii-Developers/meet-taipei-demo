@@ -107,6 +107,10 @@ $button-height: 86px;
     margin: 10px auto;
     font-size: 16px;
     animation: easein 2s;
+    display: flex;
+    flex-wrap: wrap;
+    white-space: normal;
+    line-height: 18px;
   }
 
 }
