@@ -1,5 +1,8 @@
 $button-width: 271px;
 $background-color: rgb(205, 210, 223);
+$button-background-color: rgb(245, 245, 245);
+$button-text-color: rgb(70, 79, 105);
+
 #container {
   display: block;
   background-color: $background-color;
@@ -20,11 +23,11 @@ $background-color: rgb(205, 210, 223);
     margin-left: -$button-width / 2;
     bottom: 40px;
     position: absolute;
-    border: 1px solid rgb(227, 227, 227);
-    background-color: rgb(245, 245, 245);
+    background-color: $button-background-color;
     border-radius: 45px;
     font-size: 16px;
     animation: easein 2s;
+    color: $button-text-color;
   }
   .background__button.load {
     opacity: 1;
