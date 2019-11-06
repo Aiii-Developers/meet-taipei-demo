@@ -17,6 +17,8 @@ $button-text-color: rgb(70, 79, 105);
   }
 
   .background__button {
+    display: flex;
+    justify-content: center;
     width: $button-width;
     height: 70px;
     left: 50%;

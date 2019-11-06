@@ -8,7 +8,7 @@ import { FinalPageComponent } from './shared/final-page/final-page.component';
 
 const o2oRoute = [
   {
-    path: 'o2o',
+    path: 'o2o/test',
     component: ScenarioComponent,
     data:
     {
@@ -47,7 +47,7 @@ const o2oRoute = [
     {
       path: '../assets/gif/對話_O2O-1-1-1有aiii.gif',
       nextPage: '/o2o/question/2',
-      buttonText: '迎接下⼀個O2O情境挑戰！'
+      buttonText: '保持狀態！迎接下一個挑戰'
     }
   },
   {
@@ -57,7 +57,7 @@ const o2oRoute = [
     {
       path: '../assets/gif/對話_O2O-1-1-2無aiii.gif',
       nextPage: '/o2o/question/2',
-      buttonText: '迎接下⼀個O2O情境挑戰！'
+      buttonText: '再接再厲！迎接下⼀個挑戰'
     }
   },
   {
@@ -78,7 +78,7 @@ const o2oRoute = [
     {
       path: '../assets/gif/對話_O2O-1-2-1有aiii.gif',
       nextPage: '/o2o/question/3',
-      buttonText: '迎接下⼀個O2O情境挑戰！'
+      buttonText: '保持狀態！迎接下⼀個挑戰'
     }
   },
   {
@@ -88,7 +88,7 @@ const o2oRoute = [
     {
       path: '../assets/gif/對話_O2O-1-2-2無aiii.gif',
       nextPage: '/o2o/question/3',
-      buttonText: '迎接下⼀個O2O情境挑戰！'
+      buttonText: '再接再厲！迎接下⼀個挑戰'
     }
   },
   {
@@ -108,7 +108,7 @@ const o2oRoute = [
     {
       path: '../assets/gif/對話_O2O-1-3-1有aiii.gif',
       nextPage: '/o2o/question/4',
-      buttonText: '迎接下⼀個O2O情境挑戰！'
+      buttonText: '保持狀態！迎接下⼀個挑戰'
     }
   },
   {
@@ -118,7 +118,7 @@ const o2oRoute = [
     {
       path: '../assets/gif/對話_O2O-1-3-2無aiii.gif',
       nextPage: '/o2o/question/4',
-      buttonText: '迎接下⼀個O2O情境挑戰！'
+      buttonText: '再接再厲！迎接下⼀個挑戰'
     }
   },
   {
@@ -193,7 +193,7 @@ const ecommerceRoute = [
         '既有會員從EDM加入LINE官⽅帳號就會有100元折價券喔！',
         '非會員從廣告加入LINE官⽅帳號沒有其他優惠喔！'
       ],
-      questionText: '加入LINE官⽅方帳號會獲得什麼優惠嗎？',
+      questionText: '加入LINE官⽅帳號會獲得什麼優惠嗎？',
       imagePath: '../assets/image/chat bot/meet taipei chatbot_2-1.png',
       nextPage: ['/e-commerce/2-1/aiii', '/e-commerce/2-1']
     }
@@ -260,10 +260,10 @@ const ecommerceRoute = [
     {
       buttonsText:
       [
-        '只要在LINE上綁定官網會員，就可以在LINE上輕鬆查看官網「會員專區」資料！',
-        '將優化網站載入速度，並加上Facebook login⽅方式，方便查看'
+        '在LINE上綁定官網會員，就可以在輕鬆查看官網會員/訂單資料！',
+        '我們將優化網站載入速度，並加上FB登入方式，方便查看'
       ],
-      questionText: '每次查看消費記錄、紅利點數，都要登入會員好麻煩！網⾴載入也很花時間～',
+      questionText: '每次查看消費記錄、紅利點數，都要登入會員好麻煩！網⾴載入也花時間',
       imagePath: '../assets/image/chat bot/meet taipei chatbot_2-3.png',
       nextPage: ['/e-commerce/2-3/aiii', '/e-commerce/2-3']
     }
@@ -329,9 +329,9 @@ const ecommerceRoute = [
     {
       slickImagePaths: [
         '../assets/image/3-star/CMR整合.png',
+        '../assets/image/5-star/客戶分級.png',
         '../assets/image/3-star/渠道分析.png',
-        '../assets/image/3-star/抽獎管理.png',
-        '../assets/image/3-star/活動管理.png',
+        '../assets/image/5-star/動態標籤.png',
       ],
       buttonText: '取得消費者輪廓',
       imagePath: '../assets/image/chat bot/final-page-people.png',
@@ -345,10 +345,10 @@ const ecommerceRoute = [
     data:
     {
       slickImagePaths: [
-        '../assets/image/5-star/CMR整合.png',
+        '../assets/image/3-star/CMR整合.png',
+        '../assets/image/5-star/渠道分析.png',
         '../assets/image/5-star/動態標籤.png',
         '../assets/image/5-star/客戶分級.png',
-        '../assets/image/5-star/渠道分析.png',
       ],
       buttonText: '取得消費者輪廓',
       imagePath: '../assets/image/chat bot/final-page-people.png',
