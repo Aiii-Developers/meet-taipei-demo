@@ -45,3 +45,16 @@ $swiper-button-height: 0px;
     height: 0 !important;
   }
 }
+
+.swiper.s-wrapper {
+  .swiper-pagination {
+    .swiper-pagination-handle {
+      .swiper-pagination-bullet.swiper-pagination-bullet-first {
+        border: none !important;
+      }
+      .swiper-pagination-bullet.swiper-pagination-bullet-first {
+        margin: 0 !important;
+      }
+    }
+  }
+}

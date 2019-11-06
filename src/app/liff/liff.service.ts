@@ -12,7 +12,7 @@ export class LiffService {
     this.isInit = false;
   }
 
-  private isDevMode() {
+  public isDevMode() {
     return window.location.host.includes('localhost:');
   }
 
