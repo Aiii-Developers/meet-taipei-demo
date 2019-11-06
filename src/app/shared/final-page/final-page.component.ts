@@ -12,6 +12,7 @@ export class FinalPageComponent implements OnInit, OnDestroy {
   imagePath: string;
   userName: string;
   starNumber: number;
+  result: string;
   private sub: any;
   constructor(private route: ActivatedRoute, private liffService: LiffService) { }
 
@@ -25,6 +26,7 @@ export class FinalPageComponent implements OnInit, OnDestroy {
         this.buttonText = data.buttonText;
         this.imagePath = data.imagePath;
         this.starNumber = data.starNumber;
+        this.result = data.result;
       });
   }
 
@@ -32,8 +34,25 @@ export class FinalPageComponent implements OnInit, OnDestroy {
     this.sub.unsubscribe();
   }
 
-  closeLiffWindow() {
+  private closeLiffWindow(): void {
     this.liffService.closeWindow();
+  }
+
+  private async sendMessage(message: string): Promise<void> {
+    try {
+      await this.liffService.sendMessages([{
+        type: 'text',
+        text: message
+      }]);
+    } catch (error) {
+      alert(error.message);
+    }
+
+  }
+
+  async finishChallenge(): Promise<void> {
+    await this.sendMessage(this.result);
+    this.closeLiffWindow();
   }
 
 }

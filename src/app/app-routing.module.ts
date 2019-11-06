@@ -12,7 +12,7 @@ const o2oRoute = [
     component: ScenarioComponent,
     data:
     {
-      liffId: '1570437614-EX2Yn1x3',
+      liffId: '1565999579-YynrAg2P',
       path: '../assets/gif/對話_O2O-開頭.gif',
       nextPage: 'question/1',
       buttonText: '已了解情境背景，立即挑戰實作!'
@@ -155,7 +155,8 @@ const o2oRoute = [
       ],
       buttonText: '取得消費著輪廓',
       imagePath: '../assets/image/chat bot/final-page-people.png',
-      starNumber: 3
+      starNumber: 3,
+      result: 'O2O分析'
     }
   }
 ];
@@ -166,7 +167,7 @@ const ecommerceRoute = [
     component: ScenarioComponent,
     data:
     {
-      liffId: '1570437614-91MRpJkK',
+      liffId: '1565999579-n7084Pmp',
       path: '../assets/gif/對話_電商-開頭.gif',
       nextPage: 'question/1',
       buttonText: '已了解情境背景，立即挑戰實作!'
@@ -320,7 +321,8 @@ const ecommerceRoute = [
       ],
       buttonText: '取得消費著輪廓',
       imagePath: '../assets/image/chat bot/final-page-people.png',
-      starNumber: 3
+      starNumber: 3,
+      result: 'ads'
     }
   },
   {
@@ -336,7 +338,8 @@ const ecommerceRoute = [
       ],
       buttonText: '取得消費著輪廓',
       imagePath: '../assets/image/chat bot/final-page-people.png',
-      starNumber: 5
+      starNumber: 5,
+      result: 'edm'
     }
   }
 ];

@@ -42,6 +42,15 @@ export class LiffService {
     }
   }
 
+  async sendMessages(messages: Array<LIFFTextMessage |
+                                    LIFFImageMessage |
+                                    LIFFVideoMessage |
+                                    LIFFAudioMessage |
+                                    LIFFLocationMessage>):
+  Promise<void> {
+    await this.liff.sendMessages(messages);
+  }
+
   closeWindow() {
     this.liff.closeWindow();
   }
