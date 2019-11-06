@@ -17,6 +17,7 @@ $button-height: 70px;
 
   .text-section {
     display: flex;
+    z-index: 999;
     justify-content: center;
     animation-delay: 2s;
     animation: easein 2s;
@@ -73,7 +74,7 @@ $button-height: 70px;
 
   .button-section {
     position: absolute;
-    bottom: 70px;
+    bottom: 50px;
     left: 50%;
     margin-left: -$button-width / 2;
 

@@ -17,8 +17,6 @@ $button-height: 86px;
   .text-section {
     display: flex;
     justify-content: center;
-    animation-delay: 2s;
-    animation: easein 2s;
   }
   
   #circle {
@@ -39,6 +37,7 @@ $button-height: 86px;
   }
 
   .text-section__box {
+    z-index: 999;
     width: 257px;
     height: 118px;
     background-color: $gray;
@@ -49,6 +48,8 @@ $button-height: 86px;
     margin-top: 40px;
     border-radius: 4px;
     padding: 0 19px;
+    animation-delay: 2s;
+    animation: easein 2s;
     p {
       margin: 0;
       color: $background-color;
@@ -57,6 +58,8 @@ $button-height: 86px;
 
   .backgroung-image {
     display: flex;
+    position: relative;
+    z-index: 1;
     justify-content: center;
     margin: -32px auto 0 auto;
     width: $background-image-width;
@@ -68,34 +71,15 @@ $button-height: 86px;
     }
   }
 
-  @media screen and (min-height: 400px) {
-    .buttons {
-      height: 192px;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      margin-top: -60px;
-    }
-  }
-
-  @media screen and (min-height: 812px) {
-    .buttons {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      margin: 30px auto 0;
-    }
-  }
-
-  @media screen
-    and (max-height: 896px)
-    and (min-width : 414px)  {
-    .buttons {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      margin: 90px auto 0;
-    }
+  .buttons {
+    position: absolute;
+    left: 50%;
+    margin-left: -$button-width / 2;
+    height: 192px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    bottom: 20px;
   }
 
   .button {
@@ -109,6 +93,7 @@ $button-height: 86px;
     animation: easein 2s;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     white-space: normal;
     line-height: 18px;
   }

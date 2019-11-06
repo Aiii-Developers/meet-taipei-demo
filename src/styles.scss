@@ -9,10 +9,10 @@ body {
   overflow: hidden;
 }
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: NotoSansCJKtc-Regular, Roboto, "Helvetica Neue", sans-serif; }
 
-$swiper-button-width: 10px;
-$swiper-button-height: 24px;
+$swiper-button-width: 0px;
+$swiper-button-height: 0px;
 
 @mixin swiper-button {
   width: $swiper-button-width !important;
@@ -31,7 +31,6 @@ $swiper-button-height: 24px;
   @include swiper-button;
   background-image: url('./assets/icon/arrow-left.png') !important;
 }
-
 
 .swiper.s-wrapper {
   .swiper-wrapper {

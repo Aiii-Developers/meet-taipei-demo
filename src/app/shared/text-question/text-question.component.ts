@@ -30,7 +30,7 @@ export class TextQuestionComponent implements OnInit, OnDestroy {
 
     setTimeout(() => {
       this.isButtonVisible = true;
-    }, 3000);
+    }, 2000);
   }
 
   ngOnDestroy() {
