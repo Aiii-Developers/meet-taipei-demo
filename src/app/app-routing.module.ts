@@ -260,10 +260,10 @@ const ecommerceRoute = [
     {
       buttonsText:
       [
-        '只要在LINE上綁定官網會員，就可以在 LINE上輕鬆查看官網「會員專區」資料！',
+        '只要在LINE上綁定官網會員，就可以在LINE上輕鬆查看官網「會員專區」資料！',
         '將優化網站載入速度，並加上Facebook login⽅方式，方便查看'
       ],
-      questionText: '每次查看消費記錄、紅利利點數，都要登入會員好麻！網⾴頁載入也很花時間～',
+      questionText: '每次查看消費記錄、紅利點數，都要登入會員好麻煩！網⾴載入也很花時間～',
       imagePath: '../assets/image/chat bot/meet taipei chatbot_2-3.png',
       nextPage: ['/e-commerce/2-3/aiii', '/e-commerce/2-3']
     }
