@@ -12,9 +12,15 @@ export class LiffService {
     this.isInit = false;
   }
 
+  private isDevMode() {
+    return window.location.host.includes('localhost:');
+  }
+
   async initLiff(liffId: string) {
     try {
-      if (!this.isInit) {
+      if (this.isDevMode()) {
+        console.log('init liff');
+      } else if (!this.isInit) {
         await this.liff.init({ liffId });
         this.isInit = true;
       }
