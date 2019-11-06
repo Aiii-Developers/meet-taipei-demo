@@ -225,12 +225,12 @@ const ecommerceRoute = [
     {
       buttonsText:
       [
-        '針對會員喜好，改善推播內容，並依據您的愛好推播訊息。',
-        '好的，我們會降低推播訊息頻率。'
+        '好的，我們會降低推播訊息頻率。',
+        '針對會員喜好，改善推播內容，並依據您的愛好推播訊息。'
       ],
       questionText: '最近收到好多推播訊息，但是很多不是我感興趣的內容...',
       imagePath: '../assets/image/chat bot/meet taipei chatbot_2-2.png',
-      nextPage: ['/e-commerce/2-2/aiii', '/e-commerce/2-2']
+      nextPage: ['/e-commerce/2-2', '/e-commerce/2-2/aiii']
     }
   },
   {
@@ -295,11 +295,11 @@ const ecommerceRoute = [
     {
       buttonsText:
       [
-        '沒問題！依照使用者近期瀏覽行為推薦更感興趣商品，促進消費～',
-        '好的，依照使用者購物車內的商品通投再行銷廣告～'
+        '好的，依照使用者購物車內的商品通投再行銷廣告～',
+        '沒問題！依照使用者近期瀏覽行為推薦更感興趣商品，促進消費～'
       ],
       imagePath: '../assets/gif/對話_電商-2-4_(4s).gif',
-      nextPage: ['/e-commerce/question/1-4/aiii', '/e-commerce/question/1-4']
+      nextPage: ['/e-commerce/question/1-4', '/e-commerce/question/1-4/aiii']
     }
   },
   {
@@ -328,10 +328,10 @@ const ecommerceRoute = [
     data:
     {
       slickImagePaths: [
-        '../assets/image/3-star/CMR整合.png',
-        '../assets/image/5-star/客戶分級.png',
-        '../assets/image/3-star/渠道分析.png',
+        '../assets/image/5-star/CMR整合.png',
+        '../assets/image/5-star/渠道分析.png',
         '../assets/image/5-star/動態標籤.png',
+        '../assets/image/5-star/客戶分級.png',
       ],
       buttonText: '取得消費者輪廓',
       imagePath: '../assets/image/chat bot/final-page-people.png',
@@ -345,7 +345,7 @@ const ecommerceRoute = [
     data:
     {
       slickImagePaths: [
-        '../assets/image/3-star/CMR整合.png',
+        '../assets/image/5-star/CMR整合.png',
         '../assets/image/5-star/渠道分析.png',
         '../assets/image/5-star/動態標籤.png',
         '../assets/image/5-star/客戶分級.png',
