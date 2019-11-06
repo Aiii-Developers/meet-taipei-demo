@@ -72,6 +72,7 @@ $button-height: 86px;
   }
 
   .buttons {
+    z-index: 999;
     position: absolute;
     left: 50%;
     margin-left: -$button-width / 2;

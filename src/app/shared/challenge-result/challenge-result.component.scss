@@ -37,6 +37,7 @@ $button-height: 70px;
   }
 
   .text-section__box {
+    z-index: 999;
     width: 257px;
     height: 118px;
     background-color: $yellow;

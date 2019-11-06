@@ -38,8 +38,10 @@ $button-height: 86px;
     animation: easein 2s;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     white-space: normal;
     line-height: 18px;
+    z-index: 999;
   }
   
 };

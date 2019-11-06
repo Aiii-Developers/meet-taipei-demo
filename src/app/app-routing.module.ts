@@ -34,8 +34,7 @@ const o2oRoute = [
     component: ScenarioComponent,
     data:
     {
-      // TODO(jamfly): change this pic to 有 aiii while got the correct pic
-      path: '../assets/gif/對話_O2O-1-1-2無aiii.gif',
+      path: '../assets/gif/對話_O2O-1-1-1有aiii.gif',
       nextPage: '/o2o/question/2',
       buttonText: '迎接下⼀個O2O情境挑戰!'
     }
@@ -56,7 +55,7 @@ const o2oRoute = [
     data:
     {
       buttonsText: ['用LINE辦抽獎，中獎結果即時通知', '請客服人員專⾨與您聯繫'],
-      questionText: '參加官網跟⾨門市抽獎，公告得獎名單 那麼長?我哪有美國時間慢慢查!',
+      questionText: '參加官網跟門市抽獎，公告得獎名單 那麼長?我哪有美國時間慢慢查!',
       imagePath: '../assets/image/chat bot/meet taipei chatbot_1-2.png',
       nextPage: ['/o2o/question/1-2/aiii', '/o2o/question/1-2']
     }
@@ -153,7 +152,7 @@ const o2oRoute = [
         '../assets/image/3-star/抽獎管理.png',
         '../assets/image/3-star/活動管理.png',
       ],
-      buttonText: '取得消費著輪廓',
+      buttonText: '取得消費者輪廓',
       imagePath: '../assets/image/chat bot/final-page-people.png',
       starNumber: 3,
       result: 'O2O分析'
@@ -216,7 +215,7 @@ const ecommerceRoute = [
       buttonsText:
       [
         '針對會員喜好，改善推播內容，並依據您的愛好推播訊息。',
-        '好的，我們將會降低推播訊息的頻率。'
+        '好的，我們會降低推播訊息頻率。'
       ],
       questionText: '最近收到好多推播訊息，但是很多不是我感興趣的內容...',
       imagePath: '../assets/image/chat bot/meet taipei chatbot_2-2.png',
@@ -294,7 +293,7 @@ const ecommerceRoute = [
     data:
     {
       rawText: '這個廣告抓得住我！和我近期的喜好相符～',
-      buttonText: '話不多說\n立馬查看挑戰結果',
+      buttonText: '依據不同行為喜好做個人化推播，果然有效提升消費者購買轉換率！',
       imagePath: '../assets/image/chat bot/meet taipei chatbot_2-4-1.png',
     }
   },
@@ -304,7 +303,7 @@ const ecommerceRoute = [
     data:
     {
       rawText: '兩個月前看過的這個產品，怎麼一直被投放這個廣告～～～',
-      buttonText: '話不多說\n立馬查看挑戰結果',
+      buttonText: '不依消費者喜好，直接通投全館折扣的廣告，購物車的流失率一點都沒降低...對於品牌的信任也更下降了！',
       imagePath: '../assets/image/chat bot/meet taipei chatbot_2-4-2.png',
     }
   },
@@ -319,7 +318,7 @@ const ecommerceRoute = [
         '../assets/image/3-star/抽獎管理.png',
         '../assets/image/3-star/活動管理.png',
       ],
-      buttonText: '取得消費著輪廓',
+      buttonText: '取得消費者輪廓',
       imagePath: '../assets/image/chat bot/final-page-people.png',
       starNumber: 3,
       result: 'ads'
@@ -336,7 +335,7 @@ const ecommerceRoute = [
         '../assets/image/5-star/客戶分級.png',
         '../assets/image/5-star/渠道分析.png',
       ],
-      buttonText: '取得消費著輪廓',
+      buttonText: '取得消費者輪廓',
       imagePath: '../assets/image/chat bot/final-page-people.png',
       starNumber: 5,
       result: 'edm'

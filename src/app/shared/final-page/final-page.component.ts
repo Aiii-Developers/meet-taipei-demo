@@ -17,8 +17,9 @@ export class FinalPageComponent implements OnInit, OnDestroy {
   constructor(private route: ActivatedRoute, private liffService: LiffService) { }
 
   async ngOnInit() {
-    const profile = await this.liffService.getProfile();
-    this.userName = profile.displayName;
+    // const profile = await this.liffService.getProfile();
+    // this.userName = profile.displayName;
+    this.userName = 'jamfly';
     this.sub = this.route
       .data
       .subscribe(data => {
