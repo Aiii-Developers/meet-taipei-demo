@@ -49,6 +49,7 @@ $swiper-button-height: 0px;
 .swiper.s-wrapper {
   .swiper-pagination {
     .swiper-pagination-handle {
+      margin-bottom: 5px !important;
       .swiper-pagination-bullet.swiper-pagination-bullet-first {
         border: none !important;
       }

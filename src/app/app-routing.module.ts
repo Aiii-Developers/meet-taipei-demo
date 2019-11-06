@@ -15,7 +15,7 @@ const o2oRoute = [
       liffId: '1565999579-2Gzv3mEl',
       path: '../assets/gif/對話_O2O-開頭.gif',
       nextPage: '/o2o/final',
-      buttonText: '已了解情境背景，立即挑戰實作!'
+      buttonText: '已了解情境背景，立即挑戰實作！'
     }
   },
   {
@@ -26,7 +26,7 @@ const o2oRoute = [
       liffId: '1565999579-YynrAg2P',
       path: '../assets/gif/對話_O2O-開頭.gif',
       nextPage: 'question/1',
-      buttonText: '已了解情境背景，立即挑戰實作!'
+      buttonText: '已了解情境背景，立即挑戰實作！'
     }
   },
   {
@@ -35,7 +35,7 @@ const o2oRoute = [
     data:
     {
       buttonsText: ['可以喔，綁定LINE會員即可整合', '啊...這邊金額無法累積'],
-      questionText: '現在加入LINE會員消費滿3000元就可以參參加抽獎，那在門市&官網都有消費，金額是可以累積嗎?',
+      questionText: '現在加入LINE會員消費滿3000元就可以參加抽獎，那在門市&官網都有消費，金額是可以累積嗎？',
       imagePath: '../assets/image/chat bot/meet taipei chatbot_1-1.png',
       nextPage: ['/o2o/question/1-1/aiii', '/o2o/question/1-1']
     }
@@ -47,7 +47,7 @@ const o2oRoute = [
     {
       path: '../assets/gif/對話_O2O-1-1-1有aiii.gif',
       nextPage: '/o2o/question/2',
-      buttonText: '迎接下⼀個O2O情境挑戰!'
+      buttonText: '迎接下⼀個O2O情境挑戰！'
     }
   },
   {
@@ -57,7 +57,7 @@ const o2oRoute = [
     {
       path: '../assets/gif/對話_O2O-1-1-2無aiii.gif',
       nextPage: '/o2o/question/2',
-      buttonText: '迎接下⼀個O2O情境挑戰!'
+      buttonText: '迎接下⼀個O2O情境挑戰！'
     }
   },
   {
@@ -65,7 +65,7 @@ const o2oRoute = [
     component: TextQuestionComponent,
     data:
     {
-      buttonsText: ['用LINE辦抽獎，中獎結果即時通知', '請客服人員專⾨與您聯繫'],
+      buttonsText: ['用LINE辦抽獎，中獎結果即時通知', '我們會請客服專員與中獎者直接聯繫'],
       questionText: '參加官網跟門市抽獎，公告得獎名單那麼長？我哪有美國時間慢慢查！',
       imagePath: '../assets/image/chat bot/meet taipei chatbot_1-2.png',
       nextPage: ['/o2o/question/1-2/aiii', '/o2o/question/1-2']
@@ -78,7 +78,7 @@ const o2oRoute = [
     {
       path: '../assets/gif/對話_O2O-1-2-1有aiii.gif',
       nextPage: '/o2o/question/3',
-      buttonText: '迎接下⼀個O2O情境挑戰!'
+      buttonText: '迎接下⼀個O2O情境挑戰！'
     }
   },
   {
@@ -88,7 +88,7 @@ const o2oRoute = [
     {
       path: '../assets/gif/對話_O2O-1-2-2無aiii.gif',
       nextPage: '/o2o/question/3',
-      buttonText: '迎接下⼀個O2O情境挑戰!'
+      buttonText: '迎接下⼀個O2O情境挑戰！'
     }
   },
   {
@@ -108,7 +108,7 @@ const o2oRoute = [
     {
       path: '../assets/gif/對話_O2O-1-3-1有aiii.gif',
       nextPage: '/o2o/question/4',
-      buttonText: '迎接下⼀個O2O情境挑戰!'
+      buttonText: '迎接下⼀個O2O情境挑戰！'
     }
   },
   {
@@ -118,7 +118,7 @@ const o2oRoute = [
     {
       path: '../assets/gif/對話_O2O-1-3-2無aiii.gif',
       nextPage: '/o2o/question/4',
-      buttonText: '迎接下⼀個O2O情境挑戰!'
+      buttonText: '迎接下⼀個O2O情境挑戰！'
     }
   },
   {
@@ -180,7 +180,7 @@ const ecommerceRoute = [
       liffId: '1565999579-n7084Pmp',
       path: '../assets/gif/對話_電商-開頭.gif',
       nextPage: 'question/1',
-      buttonText: '已了解情境背景，立即挑戰實作!'
+      buttonText: '已了解情境背景，立即挑戰實作！'
     }
   },
   {
@@ -190,8 +190,8 @@ const ecommerceRoute = [
     {
       buttonsText:
       [
-        '既有會員從EDM加入LINE官⽅帳號就會有100元折價券喔!',
-        '非會員從廣告加入LINE官⽅帳號沒有其他優惠喔!'
+        '既有會員從EDM加入LINE官⽅帳號就會有100元折價券喔！',
+        '非會員從廣告加入LINE官⽅帳號沒有其他優惠喔！'
       ],
       questionText: '加入LINE官⽅方帳號會獲得什麼優惠嗎？',
       imagePath: '../assets/image/chat bot/meet taipei chatbot_2-1.png',
