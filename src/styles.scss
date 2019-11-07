@@ -9,10 +9,10 @@ body {
   overflow: hidden;
 }
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: NotoSansCJKtc-Regular, Roboto, "Helvetica Neue", sans-serif; }
 
-$swiper-button-width: 10px;
-$swiper-button-height: 24px;
+$swiper-button-width: 0px;
+$swiper-button-height: 0px;
 
 @mixin swiper-button {
   width: $swiper-button-width !important;
@@ -32,7 +32,6 @@ $swiper-button-height: 24px;
   background-image: url('./assets/icon/arrow-left.png') !important;
 }
 
-
 .swiper.s-wrapper {
   .swiper-wrapper {
     .swiper-slide {
@@ -44,5 +43,19 @@ $swiper-button-height: 24px;
 .swiper.s-wrapper.swiper-container-horizontal {
   .swiper-scrollbar {
     height: 0 !important;
+  }
+}
+
+.swiper.s-wrapper {
+  .swiper-pagination {
+    .swiper-pagination-handle {
+      margin-bottom: 5px !important;
+      .swiper-pagination-bullet.swiper-pagination-bullet-first {
+        border: none !important;
+      }
+      .swiper-pagination-bullet.swiper-pagination-bullet-first {
+        margin: 0 !important;
+      }
+    }
   }
 }

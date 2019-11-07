@@ -19,7 +19,7 @@ $button-height: 86px;
 
   .buttons {
     position: absolute;
-    bottom: 10px;
+    bottom: 40px;
     display: flex;
     left: 50%;
     margin-left: -$button-width / 2;
@@ -36,6 +36,12 @@ $button-height: 86px;
     margin: 10px auto;
     font-size: 16px;
     animation: easein 2s;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    white-space: normal;
+    line-height: 18px;
+    z-index: 999;
   }
   
 };

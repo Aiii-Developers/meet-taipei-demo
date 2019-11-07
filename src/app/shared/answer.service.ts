@@ -14,7 +14,7 @@ export class AnswerService {
   }
 
   public getResult(): string {
-    const fiveStar =  this.answers[0] === 'a' && this.answers[1] === 'a' && this.answers[3] === 'a';
+    const fiveStar =  this.answers[0] === 'a' && this.answers[1] === 'b' && this.answers[3] === 'b';
     return fiveStar ? '/e-commerce/final/five' : '/e-commerce/final/three';
   }
 
