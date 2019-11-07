@@ -1,27 +1,22 @@
-# MeetTaipeiDemo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.1.
+<img src="./Aiii_logo.png"/>
 
-## Development server
+## MeetTaipeiDemo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+-----
 
-## Code scaffolding
+[![Aiii](https://img.shields.io/badge/meet%20taipei-aiii-blue)](https://meettaipei.tw/exhibition.php) [![MIT Licence](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/mit-license.php) [![typescript](https://img.shields.io/badge/typescript-3.5.3-blue)](https://img.shields.io/badge/typescript-3.5.3-blue) [![Angular](https://img.shields.io/badge/angular-8.2.13-red)](https://angular.io/) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This project is the demo for [2019 Meet Taipei](https://meettaipei.tw/)
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## How to contribute
+1. fork the repo
+2. go to the forked repo and clone the project
+3. change directory to the project
+4. install dependencies `npm i`
+5. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+6. Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+please open an issue, then we will fix the problem soon, thanks.
