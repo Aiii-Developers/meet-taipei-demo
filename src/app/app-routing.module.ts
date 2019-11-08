@@ -98,7 +98,7 @@ const o2oRoute = [
     {
       buttonsText: ['報告老闆，LINE後台不支援此分析', '沒問題！（還好合作廠商有支援）'],
       imagePath: '../assets/gif/對話_O2O-1-3_(4s).gif',
-      nextPage: ['/o2o/question/1-3/aiii', '/o2o/question/1-3']
+      nextPage: ['/o2o/question/1-3', '/o2o/question/1-3/aiii']
     }
   },
   {
