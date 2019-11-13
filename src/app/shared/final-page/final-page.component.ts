@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { LiffService } from '../../liff/liff.service';
+import { AngularFirestore } from 'angularfire2/firestore';
 @Component({
   selector: 'app-final-page',
   templateUrl: './final-page.component.html',
@@ -13,15 +14,17 @@ export class FinalPageComponent implements OnInit, OnDestroy {
   userName: string;
   starNumber: number;
   result: string;
+  type: string;
   private sub: any;
-  constructor(private route: ActivatedRoute, private liffService: LiffService) { }
+  private profile: LineUserProfile;
+  constructor(private route: ActivatedRoute, private liffService: LiffService, private db: AngularFirestore) { }
 
   async ngOnInit() {
+    this.profile = await this.liffService.getProfile();
     if (this.liffService.isDevMode()) {
       this.userName = 'jamfly';
     } else {
-      const profile = await this.liffService.getProfile();
-      this.userName = profile.displayName;
+      this.userName = this.profile.displayName;
     }
     this.sub = this.route
       .data
@@ -31,6 +34,7 @@ export class FinalPageComponent implements OnInit, OnDestroy {
         this.imagePath = data.imagePath;
         this.starNumber = data.starNumber;
         this.result = data.result;
+        this.type = data.type;
       });
   }
 
@@ -51,11 +55,19 @@ export class FinalPageComponent implements OnInit, OnDestroy {
     } catch (error) {
       alert(error.message);
     }
+  }
 
+  private async trackUser(): Promise<void> {
+    const doc = this.db.collection('/finish').doc(this.profile.userId);
+    await doc.set({
+      userName: this.profile.displayName,
+      type: this.type
+    });
   }
 
   async finishChallenge(): Promise<void> {
     await this.sendMessage(this.result);
+    await this.trackUser();
     this.closeLiffWindow();
   }
 

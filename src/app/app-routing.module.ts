@@ -26,7 +26,9 @@ const o2oRoute = [
       liffId: '1565999579-YynrAg2P',
       path: '../assets/gif/對話_O2O-開頭.gif',
       nextPage: 'question/1',
-      buttonText: '已了解情境背景，立即挑戰實作！'
+      buttonText: '已了解情境背景，立即挑戰實作！',
+      isStart: true,
+      type: 'O2O'
     }
   },
   {
@@ -166,7 +168,8 @@ const o2oRoute = [
       buttonText: '取得消費者輪廓分析',
       imagePath: '../assets/image/chat bot/final-page-people.png',
       starNumber: 3,
-      result: '立即取得O2O消費者輪廓分析！'
+      result: '立即取得O2O消費者輪廓分析！',
+      type: 'O2O'
     }
   }
 ];
@@ -180,7 +183,9 @@ const ecommerceRoute = [
       liffId: '1565999579-n7084Pmp',
       path: '../assets/gif/對話_電商-開頭.gif',
       nextPage: 'question/1',
-      buttonText: '已了解情境背景，立即挑戰實作！'
+      buttonText: '已了解情境背景，立即挑戰實作！',
+      isStart: true,
+      type: 'online'
     }
   },
   {
@@ -353,7 +358,8 @@ const ecommerceRoute = [
       buttonText: '取得消費者輪廓',
       imagePath: '../assets/image/chat bot/final-page-people.png',
       starNumber: 5,
-      result: '立即取得消費者輪廓分析！'
+      result: '立即取得消費者輪廓分析！',
+      type: 'online'
     }
   }
 ];
