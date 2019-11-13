@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { environment } from '../environments/environment';
+
 import { QuestionComponent } from './shared/question/question.component';
 import { ScenarioComponent } from './shared/scenario/scenario.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -11,6 +13,10 @@ import { TextQuestionComponent } from './shared/text-question/text-question.comp
 import { ChallengeResultComponent } from './shared/challenge-result/challenge-result.component';
 import { FinalPageComponent } from './shared/final-page/final-page.component';
 import { UserNameComponent } from './shared/user-name/user-name.component';
+import { AnswerService } from './shared/answer.service';
+
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFireModule } from 'angularfire2';
 
 import { 
   SWIPER_CONFIG,
@@ -20,7 +26,6 @@ import {
   SwiperPaginationInterface
 } from 'ngx-swiper-wrapper';
 
-import { AnswerService } from './shared/answer.service';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
   a11y: true,
@@ -63,7 +68,9 @@ DEFAULT_SWIPER_CONFIG.pagination = pagination;
     BrowserAnimationsModule,
     MatButtonModule,
     SwiperModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule
   ],
   providers: [
     {
