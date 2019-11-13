@@ -64,7 +64,8 @@ export class FinalPageComponent implements OnInit, OnDestroy {
       type: this.type,
       userId: this.profile.userId,
       createdAt: new Date(),
-    });
+    },
+    { merge: true });
   }
 
   async finishChallenge(): Promise<void> {

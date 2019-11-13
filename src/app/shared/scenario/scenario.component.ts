@@ -53,7 +53,8 @@ export class ScenarioComponent implements OnInit, OnDestroy {
       type: this.type,
       userId: profile.userId,
       createdAt: new Date(),
-    });
+    },
+    { merge: true });
   }
 
 }
