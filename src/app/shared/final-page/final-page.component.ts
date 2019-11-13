@@ -61,7 +61,9 @@ export class FinalPageComponent implements OnInit, OnDestroy {
     const doc = this.db.collection('/finish').doc(this.profile.userId);
     await doc.set({
       userName: this.profile.displayName,
-      type: this.type
+      type: this.type,
+      userId: this.profile.userId,
+      createdAt: new Date(),
     });
   }
 

@@ -50,7 +50,9 @@ export class ScenarioComponent implements OnInit, OnDestroy {
     const doc = this.db.collection('/start').doc(profile.userId);
     await doc.set({
       userName: profile.displayName,
-      type: this.type
+      type: this.type,
+      userId: profile.userId,
+      createdAt: new Date(),
     });
   }
 
