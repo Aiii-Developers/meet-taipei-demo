@@ -341,7 +341,8 @@ const ecommerceRoute = [
       buttonText: '取得消費者輪廓',
       imagePath: '../assets/image/chat bot/final-page-people.png',
       starNumber: 3,
-      result: '立即取得～消費者輪廓分析資料'
+      result: '立即取得～消費者輪廓分析資料',
+      type: 'online'
     }
   },
   {
